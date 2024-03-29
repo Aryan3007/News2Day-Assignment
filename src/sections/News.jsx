@@ -29,7 +29,9 @@ const News = () => {
   return (
     <div className="">
       <div className="flex justify-between">
-        <h1 className="text-3xl font-bold uppercase my-2 mx-3">News</h1>
+        <h1 className="lg:text-3xl text-lg font-bold uppercase my-2 mx-3">
+          News
+        </h1>
         <button
           className="btn bg-blue-500 text-white border-0 hover:bg-blue-700"
           onClick={openModal} // Bind openModal function to onClick event
@@ -41,7 +43,7 @@ const News = () => {
             <dialog
               open={isModalOpen}
               id="my_modal_1"
-              className="modal h-screen w-screen"
+              className="modal lg:h-screen h-full w-screen"
             >
               <div className="modal-box bg-white shadow-xl">
                 <section className="bg-white">
@@ -267,7 +269,7 @@ const News = () => {
       </div>
       <hr className="bg-black my-4" />
       <div className="grid grid-cols-1 gap-4 px-4 lg:grid-cols-3 lg:gap-8">
-        <article className="overflow-hidden w-[340px] rounded-lg shadow transition hover:shadow-lg">
+        <article className="overflow-hidden  rounded-lg shadow transition hover:shadow-lg">
           <img
             alt=""
             src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
@@ -297,7 +299,7 @@ const News = () => {
             <button className="my-3 text-blue-500 underline">Read more</button>
           </div>
         </article>{" "}
-        <article className="overflow-hidden w-[340px] rounded-lg shadow transition hover:shadow-lg">
+        <article className="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
           <img
             alt=""
             src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
@@ -327,7 +329,7 @@ const News = () => {
             <button className="my-3 text-blue-500 underline">Read more</button>
           </div>
         </article>{" "}
-        <article className="overflow-hidden w-[340px] rounded-lg shadow transition hover:shadow-lg">
+        <article className="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
           <img
             alt=""
             src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"

@@ -14,12 +14,12 @@ const Catagories = () => {
   return (
     <div className="">
       <div className="flex justify-between">
-        <h1 className="text-3xl font-bold uppercase my-2 mx-3">Catagories</h1>
+        <h1 className="lg:text-3xl text-lg font-bold uppercase my-2 mx-3">Catagories</h1>
         <button
           onClick={openModal}
           className="btn bg-blue-500 text-white border-0 hover:bg-blue-700"
         >
-          <CiCirclePlus className="text-2xl" /> <span>Create New Category</span>
+          <CiCirclePlus className="lg:text-2xl text-sm" /> <span>Create New Category</span>
         </button>
 
         {isModalOpen && (
@@ -83,7 +83,7 @@ const Catagories = () => {
               <img
                 className="object-cover w-full h-56 rounded-lg lg:w-72"
                 src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                alt
+                alt=""
               />
               <div className="flex flex-col justify-between py-6 lg:mx-6">
                 <a
@@ -108,7 +108,7 @@ const Catagories = () => {
               <img
                 className="object-cover w-full h-56 rounded-lg lg:w-72"
                 src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                alt
+                alt=""
               />
               <div className="flex flex-col justify-between py-6 lg:mx-6">
                 <a
@@ -133,7 +133,7 @@ const Catagories = () => {
               <img
                 className="object-cover w-full h-56 rounded-lg lg:w-72"
                 src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                alt
+                alt=""
               />
               <div className="flex flex-col justify-between py-6 lg:mx-6">
                 <a
@@ -158,7 +158,7 @@ const Catagories = () => {
               <img
                 className="object-cover w-full h-56 rounded-lg lg:w-72"
                 src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                alt
+                alt=""
               />
               <div className="flex flex-col justify-between py-6 lg:mx-6">
                 <a

@@ -11,14 +11,12 @@ import { FaRegNewspaper } from "react-icons/fa6";
 import { MdOutlineManageAccounts } from "react-icons/md";
 import { GrDocumentPerformance } from "react-icons/gr";
 
-
-
 const Dashboard = () => {
   const [activeButton, setActiveButton] = useState("Dashboard");
 
   return (
     <>
-      <aside className="ml-[-100%] fixed z-10 top-0 pb-3 px-6 w-full flex flex-col justify-between h-screen border-r bg-white transition duration-300 md:w-4/12 lg:ml-0 lg:w-[25%] xl:w-[20%] 2xl:w-[20%]">
+      <aside className=" lg:fixed z-10 top-0 pb-3 px-6 w-full flex flex-col justify-between h-screen border-r bg-white transition duration-300 md:w-fulllg:ml-0 lg:w-[25%] xl:w-[20%] 2xl:w-[20%]">
         <div>
           <div className="-mx-6 px-6 py-4">
             <h1 className="text-3xl font-bold text-center  text-sky-500 underline">
@@ -29,12 +27,12 @@ const Dashboard = () => {
             <img
               src="https://images.unsplash.com/photo-1457449940276-e8deed18bfff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
-              className="w-10 h-10 m-auto rounded-full object-cover lg:w-28 lg:h-28"
+              className=" m-auto rounded-full object-cover w-28 h-28"
             />
-            <h5 className="hidden mt-4 text-xl font-semibold text-gray-600 lg:block">
+            <h5 className=" mt-4 text-xl font-semibold text-gray-600 block">
               Aryan Tyagi
             </h5>
-            <span className="hidden text-gray-400 lg:block">Admin</span>
+            <span className=" text-gray-400 block">Admin</span>
           </div>
           <div className="space-y-2 mt-8">
             <button
@@ -56,7 +54,7 @@ const Dashboard = () => {
               }`}
               onClick={() => setActiveButton("Catagories")}
             >
-              <MdMenuOpen/>
+              <MdMenuOpen />
               <span className="-mr-1 font-medium">Catagories</span>
             </button>
             <button
@@ -67,7 +65,7 @@ const Dashboard = () => {
               }`}
               onClick={() => setActiveButton("News")}
             >
-              <FaRegNewspaper/>
+              <FaRegNewspaper />
               <span className="-mr-1 font-medium">News</span>
             </button>
             <button
@@ -78,7 +76,7 @@ const Dashboard = () => {
               }`}
               onClick={() => setActiveButton("Manage News")}
             >
-              <MdOutlineManageAccounts/>
+              <MdOutlineManageAccounts />
               <span className="-mr-1 font-medium">Manage News</span>
             </button>
             <button
@@ -89,7 +87,7 @@ const Dashboard = () => {
               }`}
               onClick={() => setActiveButton("Performance Overview")}
             >
-              <GrDocumentPerformance/>
+              <GrDocumentPerformance />
               <span className="-mr-1 font-medium">Performance Overview</span>
             </button>
           </div>
@@ -102,7 +100,7 @@ const Dashboard = () => {
         </div>
       </aside>
 
-      <section className="p-4 bg-white ml-80">
+      <section className="p-4 bg-white lg:ml-80">
         {activeButton === "Dashboard" && <Overview />}
         {activeButton === "Catagories" && <Catagories />}
         {activeButton === "News" && <News />}

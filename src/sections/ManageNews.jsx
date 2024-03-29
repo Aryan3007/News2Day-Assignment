@@ -103,7 +103,7 @@ const ManageNews = () => {
     <div className="">
       <dialog
         open={viewModelOpen}
-        id="my_modal_3"
+        id="my_modal_4"
         className="modal h-screen w-screen"
       >
         {viewedNews && (
