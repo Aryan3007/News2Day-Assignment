@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+  background-color: white !important;
+  color: black;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+.modal {
+  background-color: rgba(0, 0, 0, 0.519);
+}
